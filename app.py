@@ -97,8 +97,12 @@ import streamlit as st
 with st.sidebar:
     st.title('💬 LLM Chat App on Department of Land Resources (DOLR)(Documents)...')
 
-        # Adding the "Developed by xyz" line in dark green color
     st.markdown('''
+    ## About
+    This GPT helps in answering questions related to Allocation & Transaction of Business Rules(using the following Documents)
+
+    [Documents Repository](https://drive.google.com/drive/folders/1-XT5Exfsspr9Mb5JE9_79M5QwBLlUeG8)
+    ''')
     <div style="color: red;">
     Developed by Shreya Shree
     </div>
