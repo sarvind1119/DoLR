@@ -107,7 +107,6 @@ with st.sidebar:
     Developed by Vikas Ruhela
     </div>
     ''', unsafe_allow_html=True)
-# Adding the new list with green bullet points
     st.markdown('''
     <div style="color: green;">
     <ul>
@@ -127,8 +126,7 @@ with st.sidebar:
     </ul>
     </div>
 
-    Training on "Technical Documents" in progress
-    ''', unsafe_allow_html=True)
+     ''', unsafe_allow_html=True)
 
     # Add vertical space
     st.markdown('''
