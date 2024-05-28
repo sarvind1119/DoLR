@@ -119,6 +119,12 @@ with st.sidebar:
         <li>DDWS_JJS-2023-june-2023-bulletin.pdf</li>
         <li>DDWS_RWPF-Annual-Yearbook-2023.pdf</li>
         <li>JJM-Brochure-Year-2024.pdf</li>
+        <li>100 DAYS PLAN-Suggestions.pdf</li>
+        <li>IEC_Manual_English.pdf</li>
+        <li>Karnataka_Udupi_MRF Unit.pdf</li>
+        <li>Kerala-Plastic_and_other_NBW.pdf</li>
+        <li>PWM_Manual_English_InnerPages.pdf</li>
+        <li>Rural_Sanitation_Strategy_Report.pdf</li>
     </ul>
     </div>
 
