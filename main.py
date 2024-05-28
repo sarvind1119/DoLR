@@ -10,13 +10,13 @@ from langchain.llms import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 import os
-
+#xaxaaxda
 def read_doc(directory):
     file_loader=PyPDFDirectoryLoader(directory)
     documents=file_loader.load()
     return documents
 
-doc=read_doc('Docs/')
+doc=read_doc('C:/Users/HP/Documents/May2024/DDWS/Docs/')
 #len(doc)
 
 def chunk_data(docs,chunk_size=800,chunk_overlap=50):
@@ -37,7 +37,7 @@ from langchain_pinecone import PineconeVectorStore
 
 vectorstore_from_docs = PineconeVectorStore.from_documents(
     documents,
-    index_name='dolr',
+    index_name='ddws',
     embedding=embeddings
 )
 # index_name='business'
