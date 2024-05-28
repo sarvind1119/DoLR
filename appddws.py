@@ -96,8 +96,13 @@ import streamlit as st
 # Sidebar contents
 with st.sidebar:
     st.title('💬 LLM Chat App on Department of Drinking Water and Sanitation....')
+    st.markdown('''
+    ## About
+    This GPT helps in answering questions related to Department of Drinking Water and Sanitation(using the following Documents)
 
-        # Adding the "Developed by xyz" line in dark green color
+    [Documents Repository](https://drive.google.com/drive/folders/1YkcVDAXU1gomAzSwY6CK4aRnnzPP3zhJ?usp=drive_link)
+    ''')
+    # Adding the "Developed by xyz" line in dark green color
     st.markdown('''
     <div style="color: red;">
     Developed by Vikas Ruhela
@@ -114,6 +119,12 @@ with st.sidebar:
         <li>DDWS_JJS-2023-june-2023-bulletin.pdf</li>
         <li>DDWS_RWPF-Annual-Yearbook-2023.pdf</li>
         <li>JJM-Brochure-Year-2024.pdf</li>
+        <li>100 DAYS PLAN-Suggestions.pdf</li>
+        <li>IEC_Manual_English.pdf</li>
+        <li>Karnataka_Udupi_MRF Unit.pdf</li>
+        <li>Kerala-Plastic_and_other_NBW.pdf</li>
+        <li>PWM_Manual_English_InnerPages.pdf</li>
+        <li>Rural_Sanitation_Strategy_Report.pdf</li>
     </ul>
     </div>
 
