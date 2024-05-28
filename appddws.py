@@ -95,49 +95,29 @@ import streamlit as st
 
 # Sidebar contents
 with st.sidebar:
-    st.title('💬 LLM Chat App on Department of Land Resources (DOLR)(Documents)...')
+    st.title('💬 LLM Chat App on Department of Drinking Water and Sanitation....')
 
         # Adding the "Developed by xyz" line in dark green color
     st.markdown('''
     <div style="color: red;">
-    Developed by Shreya Shree
+    Developed by Vikas Ruhela
     </div>
     ''', unsafe_allow_html=True)
 # Adding the new list with green bullet points
     st.markdown('''
     <div style="color: green;">
     <ul>
-        <li>Bhoomi Sampan Certification.pdf</li>
-        <li>Bhu-Aadhar_ Unique Land Parcel Identification Nu...pdf</li>
-        <li>Cactus.pdf</li>
-        <li>Common Guidelines 2008.pdf</li>
-        <li>Compensation, Rehabilitation, Resettlement, Development plan rules.pdf</li>
-        <li>DILRMP website Intro.pdf</li>
-        <li>Draft Operational Guidelines for DILRMP.pdf</li>
-        <li>Guidelines for evaluation of preparatory phase of IWMP.pdf</li>
-        <li>Guidelines for livelihood component WDC 2.pdf</li>
-        <li>Guidelines, Technical Manual & MIS 2018-19.pdf</li>
-        <li>Impact Assessment study of Bhoomi Sampan districts.pdf</li>
-        <li>Land acquisition (Companies) rules 1963.pdf</li>
-        <li>Land Acquisition Act 1894.pdf</li>
-        <li>Linkage of e-Court with Land Records_2F Registrati...pdf</li>
-        <li>Livelihood Production Systems and Microenterprises - IWMP Operational Guidelines.pdf</li>
-        <li>MoRDEnglish_AR2012_13_0.pdf</li>
-        <li>National Generic Document Registration System (NG...pdf</li>
-        <li>National Rehabilitation and Resettlement Policy 2007 — OCR reqd.pdf</li>
-        <li>Registration Act 1908 - Bare Act.pdf</li>
-        <li>Revenue Court Case Management System.pdf</li>
-        <li>REWARD ToR for Fin Mgmt Expert.pdf</li>
-        <li>REWARDS.pdf</li>
-        <li>RFCTLARR 2014 ordinance — OCR reqd.pdf</li>
-        <li>RFCTLARR 2015 - corrigendum to second amendment.pdf</li>
-        <li>RFCTLARR 2015 - second amendment as intro in LS.pdf</li>
-        <li>RFCTLARR 2015 Amendment — intro in LS.pdf</li>
-        <li>RFCTLARR 2015 Ordinance.pdf</li>
+        <li>DDWS_annual-report-2022-23-eng.pdf</li>
+        <li>DDWS_Behavioural-change-communication-strategy.pdf</li>
+        <li>DDWS_capacity-building-plan.pdf</li>
+        <li>DDWS_Compendium-of-behavioural-best-practices.pdf</li>
+        <li>DDWS_JJS-2023-june-2023-bulletin.pdf</li>
+        <li>DDWS_RWPF-Annual-Yearbook-2023.pdf</li>
+        <li>JJM-Brochure-Year-2024.pdf</li>
     </ul>
     </div>
 
-    Training on "Wasteland Atlas of India 2019" in progress
+    Training on "Technical Documents" in progress
     ''', unsafe_allow_html=True)
 
     # Add vertical space
@@ -167,7 +147,7 @@ def display_answer(answer):
             st.markdown(content)
 
 def main():
-    st.title("Question and Answering App powered by LLM and Pinecone on Department of Land Resources (DOLR) ")
+    st.title("Question and Answering App powered by LLM and Pinecone on Department of Drinking Water and Sanitation ")
     text_input = st.text_input("Ask your query...") 
 
     if st.button("Ask Query"):
