@@ -99,7 +99,7 @@ with st.sidebar:
 
     st.markdown('''
     ## About
-    This GPT helps in answering questions related to Allocation & Transaction of Business Rules(using the following Documents)
+    This GPT helps in answering questions related to Department of Land Resources (DOLR)(Documents)(using the following Documents)
 
     [Documents Repository](https://drive.google.com/drive/folders/1-XT5Exfsspr9Mb5JE9_79M5QwBLlUeG8)
     <div style="color: red;">
