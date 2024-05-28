@@ -97,7 +97,11 @@ import streamlit as st
 with st.sidebar:
     st.title('💬 LLM Chat App on Department of Drinking Water and Sanitation....')
 
-        # Adding the "Developed by xyz" line in dark green color
+    st.markdown('''
+    ## About
+    This GPT helps in answering questions related to Department of Drinking Water and Sanitation(using the following Documents)
+
+    [Documents Repository](https://drive.google.com/drive/folders/1YkcVDAXU1gomAzSwY6CK4aRnnzPP3zhJ?usp=drive_link)
     st.markdown('''
     <div style="color: red;">
     Developed by Vikas Ruhela
