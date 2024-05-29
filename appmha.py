@@ -100,7 +100,7 @@ with st.sidebar:
     ## About
     This GPT helps in answering questions related to Ministry of Home Affairs(using the following Documents)
 
-    [Documents Repository](https://drive.google.com/drive/folders/1YkcVDAXU1gomAzSwY6CK4aRnnzPP3zhJ?usp=drive_link)
+    [Documents Repository](https://drive.google.com/drive/folders/1bN7nlWeONC_JCYn55-fQ1cBbpS03HZNy)
     ''')
     # Adding the "Developed by xyz" line in dark green color
     st.markdown('''
