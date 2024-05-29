@@ -16,7 +16,7 @@ def read_doc(directory):
     documents=file_loader.load()
     return documents
 
-doc=read_doc('C:/Users/HP/Documents/May2024/DDWS/Docs/')
+doc=read_doc('C:/Users/HP/Documents/May2024/MHA/Docs3/')
 #len(doc)
 
 def chunk_data(docs,chunk_size=800,chunk_overlap=50):
@@ -35,11 +35,11 @@ embeddings=OpenAIEmbeddings(api_key=os.environ['OPENAI_API_KEY'])
 
 from langchain_pinecone import PineconeVectorStore
 
-vectorstore_from_docs = PineconeVectorStore.from_documents(
-    documents,
-    index_name='ddws',
-    embedding=embeddings
-)
-# index_name='business'
-# vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
-# vectorstore.add_documents(doc)
+# vectorstore_from_docs = PineconeVectorStore.from_documents(
+#     documents,
+#     index_name='mha',
+#     embedding=embeddings
+# )
+index_name='mha'
+vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
+vectorstore.add_documents(doc)
