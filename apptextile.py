@@ -44,67 +44,52 @@ response_container = st.container()
 textcontainer = st.container()
 # Sidebar contents
 with st.sidebar:
-    st.title('💬 LLM Chat App on Ministry of Petroleum and Natural Gas...')
+    st.title('💬 LLM Chat App on Ministry of Textiles...')
     st.markdown('''
     ## About
-    This GPT helps in answering questions related to the documents Ministry of Petroleum and Natural Gas
+    This GPT helps in answering questions related to the documents Ministry of Textiles
 
-    [Documents Repository](https://drive.google.com/drive/folders/12R75qO425UKg9BdWaS0-Kd-SFRENt3H3)
+    [Documents Repository](https://drive.google.com/drive/folders/1QdUlbJaviFV3WM-GueRYhY2NmPZ2YxaK)
     ''')
         # Adding the "Developed by xyz" line in dark green color
     st.markdown('''
     <div style="color: red;">
-    Developed by Sonika Kumari
+    Developed by Naresh Akunuri
     </div>
     ''', unsafe_allow_html=True)
     # Adding the new list with green bullet points
     st.markdown('''
     <div style="color: green;">
     <ul>
-        <li>1G-Ethanol.pdf</li>
-        <li>Amendments-in-NPR-2018.pdf</li>
-        <li>Auto Fuel Policy.pdf</li>
-        <li>Auto Fuel Vision and Policy-2025.pdf</li>
-        <li>Bharat Petroleum Corporation Limited.pdf</li>
-        <li>Bio Diesel.pdf</li>
-        <li>CENTRE FOR HIGH TECHNOLOGY (CHT).pdf</li>
-        <li>Chennai Petroleum Corporation Limited.pdf</li>
-        <li>Compressed Bio Gas.pdf</li>
-        <li>Ease of Doing Business.pdf</li>
-        <li>Engineers India Limited.pdf</li>
-        <li>Ethanol Blended Petrol (EBP) Programme.pdf</li>
-        <li>Ethanol_blending_in_India.pdf</li>
-        <li>Final_Ethanol_Procurement_Policy.pdf</li>
-        <li>Gazette_Notification-10_EBP.pdf</li>
-        <li>Guidelines for laying product pipelines.pdf</li>
-        <li>Guidelines_for_sale_of_Biodiesel.pdf</li>
-        <li>Hindustan Petroleum Corporation Limited.pdf</li>
-        <li>History and Evolution.pdf</li>
-        <li>Hydrogen Mission.pdf</li>
-        <li>Indian Oil Corporation Limited.pdf</li>
-        <li>Make In India.pdf</li>
-        <li>Mangalore Refinery and Petrochemicals Limited.pdf</li>
-        <li>Matters related to MSMEs.pdf</li>
-        <li>NATIONAL_POLICY_ON_BIOFUELS-2018.pdf</li>
-        <li>Notification_No_-Inclusion_of_IREDA_as_financing_institution_for_scheme_relating_to_augmentation_of_ethanol_production_capacity.pdf</li>
-        <li>Notification_No_-New_Scheme_for_extending_financial_assistance_to_sugar_mills_for_enhancement_and_augmentation_of_ethanol_production_capacity.pdf</li>
-        <li>Notification_No_-Scheme_for_extending_financial_assistance_to_molasses_based_standalone_distilleries_for_enhancement_and_augmentation_of_ethanol_production.pdf</li>
-        <li>Numaligarh Refinery Limited.pdf</li>
-        <li>OIL INDUSTRY SAFETY DIRECTORATE.pdf</li>
-        <li>PM_JI-VAN_YOJANA.pdf</li>
-        <li>Policy-on-Synthetic-Fuels-Committee-Report-March-2024.pdf</li>
-        <li>Refinery Capacity.pdf</li>
-        <li>Rice-Procurement-Price.pdf</li>
-        <li>Scheme_for_extending_financial_assistance_to_project_proponents_for_enhancement_of_their_ethanol_distillation_capacity_or_to_set_up_distilleries_for_producing_1st_G.pdf</li>
-        <li>Scheme_for_providing_assistance_to_sugar_mills_for_expenses_on_marketing_costs_-oil_season-of-Sugar_for_Sugar_season_2020-21.pdf</li>
-        <li>Second Generation (2G) Ethanol.pdf</li>
-        <li>Skill Development.pdf</li>
-        <li>Start UP.pdf</li>
-        <li>Supply-of-surplus-rice-with-FCI-for-the-production-of-ethanol.pdf</li>
+        <li>AR_Ministry_of_Textiles_2020-21_Eng.pdf</li>
+        <li>AR_Ministry of Textiles_2021-22_Eng.pdf</li>
+        <li>AR_MoT_2019-20_English.pdf</li>
+        <li>Central Silk Board-AC-I-and-RULES-Book.pdf</li>
+        <li>CSR Report-2017(MoT).pdf</li>
+        <li>Demand for Grants 2022-2023.pdf</li>
+        <li>Enhancing_Export_Competitiveness_Textile_Sector_03042018.pdf</li>
+        <li>FDI Scenario in Indian Textiles Sector - A Study Report.pdf</li>
+        <li>Final Report - Employment Study.pdf</li>
+        <li>Final Report on Direct and Indirect Taxes.pdf</li>
+        <li>Garment Study - Annexures - 26.02.2018.pdf</li>
+        <li>IIFT-J - Textile Project Report 20th March (1).pdf</li>
+        <li>Innovations in Textile and Apparel Industry.pdf</li>
+        <li>Jute Packaging Materials (Compulsory Use in Packing Commodities) Act 1987.pdf</li>
+        <li>MOT Annual Report 2022-23 (English).pdf</li>
+        <li>national textiles policy 2000.pdf</li>
+        <li>nift_act.pdf</li>
+        <li>PM_MITRA_Guidelines.pdf</li>
+        <li>Report_SITP_26Dec2016.pdf</li>
+        <li>Textiles-AnnualReport2018-2019(English).pdf</li>
+        <li>THE JUTE COMPANIES (NATIONALISATION), ACT, 1980.pdf</li>
+        <li>THE TEXTILE UNDERTAKINGS (NATIONALISATION)ACT, 1995.pdf</li>
+        <li>THE TEXTILES COMMITTEE ACT, 1963.pdf</li>
+        <li>To Promote Growth of Man Made Fibre.pdf</li>
+        <li>Vision Strategy Action Plan for Indian Textile Sector-July15.pdf</li>
+        <li>Wazir Advisors-FTA study-Final Report.pdf</li>
     </ul>
     </div>
     ''', unsafe_allow_html=True)
-
     # Add vertical space
     st.markdown('''
     ---
