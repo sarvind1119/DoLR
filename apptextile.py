@@ -44,7 +44,7 @@ response_container = st.container()
 textcontainer = st.container()
 # Sidebar contents
 with st.sidebar:
-    st.title('💬 LLM Chat App on Ministry of Textiles...')
+    st.title('💬💫 LLM Chat App on Ministry of Textiles...')
     st.markdown('''
     ## About
     This GPT helps in answering questions related to the documents Ministry of Textiles
@@ -94,7 +94,7 @@ with st.sidebar:
     st.markdown('''
     ---
 
-    **In case of suggestions/feedback/Contributions please reach out to:**
+    **In case of suggestions/feedback/Contributions 🤔 please reach out to:**
     [NIC Training Unit @ nictu@lbsnaa.gov.in]
     ''')
 
