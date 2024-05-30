@@ -44,10 +44,10 @@ response_container = st.container()
 textcontainer = st.container()
 # Sidebar contents
 with st.sidebar:
-    st.title('💬 LLM Chat App on Ministry of Electronics and Information Technology (MEITY)...')
+    st.title('💬 LLM Chat App on Department for Promotion of Industry and Internal Trade...')
     st.markdown('''
     ## About
-    This GPT helps in answering questions related to the document of the Ministry of Electronics and Information Technology.
+    This GPT helps in answering questions related to the documents of Department for Promotion of Industry and Internal Trade
 
     [Documents Repository](https://drive.google.com/drive/folders/1Oyf1oSZFnQ4y7ttRBBjs3i5JWcQh0S8k)
     ''')
