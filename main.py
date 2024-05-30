@@ -16,7 +16,7 @@ def read_doc(directory):
     documents=file_loader.load()
     return documents
 
-doc=read_doc("C:/Users/HP/Documents/May2024/DoPNG/Docs/")
+doc=read_doc("C:/Users/HP/Documents/May2024/Textiles/Docs/")
 #len(doc)
 
 def chunk_data(docs,chunk_size=800,chunk_overlap=50):
@@ -37,7 +37,7 @@ from langchain_pinecone import PineconeVectorStore
 
 vectorstore_from_docs = PineconeVectorStore.from_documents(
     documents,
-    index_name='dopng',
+    index_name='textile',
     embedding=embeddings
 )
 # index_name='mha'
