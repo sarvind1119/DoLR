@@ -35,11 +35,11 @@ embeddings=OpenAIEmbeddings(api_key=os.environ['OPENAI_API_KEY'])
 
 from langchain_pinecone import PineconeVectorStore
 
-# vectorstore_from_docs = PineconeVectorStore.from_documents(
-#     documents,
-#     index_name='commerce',
-#     embedding=embeddings
-# )
-index_name='commerce'
-vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
-vectorstore.add_documents(doc)
+vectorstore_from_docs = PineconeVectorStore.from_documents(
+    documents,
+    index_name='power2',
+    embedding=embeddings
+)
+# index_name='commerce'
+# vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
+# vectorstore.add_documents(doc)
