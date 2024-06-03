@@ -65,7 +65,7 @@ def retrieve_answers(query):
     return response
 #---------------------------------------------------------------------------------------------------------
 
-def ask_and_get_answer(vector_store, q, k=3):
+def ask_and_get_answer(vector_store, q, k=50):
     from langchain.chains import RetrievalQA
     from langchain_openai import ChatOpenAI
 
