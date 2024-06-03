@@ -47,9 +47,15 @@ with st.sidebar:
     ## About
     This GPT helps in answering questions related to document of Ministry of Power.
 
-    [Documents Repository](https://drive.google.com/drive/folders/1PrS8uaqpAFogLl-lK4IDHDcJ8FA7vjlL?usp=drive_link)
+    [Documents Repository1](https://drive.google.com/drive/folders/1PrS8uaqpAFogLl-lK4IDHDcJ8FA7vjlL?usp=drive_link)
+    [Documents Repository2](https://drive.google.com/drive/folders/1I8VMctIyLUNKAC88v7PlZNaA1j7VwmuM)
     ''')
-    
+        # Adding the "Developed by xyz" line in dark green color
+    st.markdown('''
+    <div style="color: red;">
+    Developed by Sanjana Sriharsha
+    </div>
+    ''', unsafe_allow_html=True)
     # Adding the list with green bullet points
     st.markdown('''
     <div style="color: green;">
