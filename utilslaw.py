@@ -52,7 +52,7 @@ def find_match(input):
     result = index.query(input_em, top_k=2, includeMetadata=True)
     return result['matches'][0]['metadata']['text']+"\n"+result['matches'][1]['metadata']['text']
 #-------------------------------------------------------------------------------------------------------
-llm=OpenAI(model_name="gpt-3.5-turbo-instruct",temperature=0.5)
+llm=OpenAI(model_name="GPT-4o",temperature=0.5)
 chain=load_qa_chain(llm,chain_type="stuff")
 def retrieve_query(query,k=2):
     matching_results=vectorstore.similarity_search(query,k=k)
