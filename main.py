@@ -17,7 +17,7 @@ def read_doc(directory):
     return documents
 
 
-doc=read_doc("C:/Users/HP/Documents/May2024/JUDGEMENT ON POCSO/Docs3/")
+doc=read_doc("C:/Users/HP/Documents/May2024/Agrculture/TrainedOn/")
 #len(doc)
 
 def chunk_data(docs,chunk_size=800,chunk_overlap=50):
@@ -36,11 +36,11 @@ embeddings=OpenAIEmbeddings(api_key=os.environ['OPENAI_API_KEY'])
 
 from langchain_pinecone import PineconeVectorStore
 
-# vectorstore_from_docs = PineconeVectorStore.from_documents(
-#     documents,
-#     index_name='posco',
-#     embedding=embeddings
-# )
-index_name='posco'
-vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
-vectorstore.add_documents(doc)
+vectorstore_from_docs = PineconeVectorStore.from_documents(
+    documents,
+    index_name='agri',
+    embedding=embeddings
+)
+# index_name='posco'
+# vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
+# vectorstore.add_documents(doc)

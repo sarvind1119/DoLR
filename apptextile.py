@@ -10,7 +10,9 @@ from langchain.prompts import (
 import streamlit as st
 from streamlit_chat import message
 from utiltextile import *
-
+import csv
+import os
+import streamlit as st
 st.subheader("Chatbot with Langchain, ChatGPT, Pinecone, and Streamlit")
 
 if 'responses' not in st.session_state:
@@ -124,6 +126,43 @@ with textcontainer:
                     st.markdown(content)
 
 
+def save_to_csv(data, filename="conversation_log.csv"):
+    file_exists = os.path.isfile(filename)
+    
+    with open(filename, mode='a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        
+        if not file_exists:
+            writer.writerow(["User Input", "Refined Query", "Result"])  # Write header only if file doesn't exist
+
+        writer.writerow(data)
+
+with textcontainer:
+    query = st.text_input("Query: ", key="input")
+    if query:
+        with st.spinner("typing..."):
+            conversation_string = get_conversation_string()
+            # st.code(conversation_string)
+            refined_query = query_refiner(conversation_string, query)
+            st.subheader("Refined Query:")
+            st.write(refined_query)
+            context = ask_and_get_answer(vectorstore,refined_query)
+            # print(context)  
+            response = conversation.predict(input=f"Context:\n {context} \n\n Query:\n{query}")
+            st.session_state.requests.append(query)
+            st.session_state.responses.append(response)
+
+            if "source_documents" in context:
+                st.write("### Reference Documents")
+                for i, doc in enumerate(context['source_documents'], start=1):
+                    st.write(f"#### Document {i}")
+                    st.write(f"**Page number:** {doc.metadata['page']}")
+                    st.write(f"**Source file:** {doc.metadata['source']}")
+                    content = doc.page_content.replace('\n', '  \n')  # Ensuring markdown line breaks
+                    st.markdown(content)
+
+            # Save the query, refined query, and result to CSV
+            save_to_csv([query, refined_query, response])
 
 
 with response_container:
