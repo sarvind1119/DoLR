@@ -10,14 +10,14 @@ from langchain.llms import OpenAI
 from dotenv import load_dotenv
 load_dotenv()
 import os
-#xaxaaxda
+
 def read_doc(directory):
     file_loader=PyPDFDirectoryLoader(directory)
     documents=file_loader.load()
     return documents
 
 
-doc=read_doc("C:/Users/HP/Documents/May2024/Agrculture/TrainedOn/")
+doc=read_doc("C://Users//HP//Documents//May2024//DPIIT//NMP Usage Courses")
 #len(doc)
 
 def chunk_data(docs,chunk_size=800,chunk_overlap=50):
@@ -36,11 +36,11 @@ embeddings=OpenAIEmbeddings(api_key=os.environ['OPENAI_API_KEY'])
 
 from langchain_pinecone import PineconeVectorStore
 
-vectorstore_from_docs = PineconeVectorStore.from_documents(
-    documents,
-    index_name='agri',
-    embedding=embeddings
-)
-# index_name='posco'
-# vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
-# vectorstore.add_documents(doc)
+# vectorstore_from_docs = PineconeVectorStore.from_documents(
+#     documents,
+#     index_name='dpiit2',
+#     embedding=embeddings
+# )
+index_name='dpiit2'
+vectorstore = PineconeVectorStore(index_name=index_name, embedding=embeddings)
+vectorstore.add_documents(doc)
